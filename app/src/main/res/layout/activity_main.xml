@@ -12,28 +12,27 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="167dp">
 
     </LinearLayout>
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="60sp"
-        android:layout_height="100sp"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="-340dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/logo"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/nomeApp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/logo"/>
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/nomeApp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/nomeApp"
-        android:layout_width="200sp"
-        android:layout_height="100sp"
-        android:layout_marginTop="-340dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
         android:contentDescription="@string/nomeApp"
         android:src="@drawable/name"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,57 +43,56 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button1"
         style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-        android:layout_width="205sp"
-        android:layout_height="90sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/green"
+        android:contentDescription="@string/restaurante"
         android:maxLines="15"
         android:text="Restaurante Universitário"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="20sp"
         app:cornerRadius="60dp"
         app:icon="@drawable/icon_ru"
         app:iconTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45"
-        android:contentDescription="@string/restaurante"/>
+        app:layout_constraintTop_toBottomOf="@+id/nomeApp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
         style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-        android:layout_width="205sp"
-        android:layout_height="90sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/green"
+        android:contentDescription="@string/fretado"
         android:text="Fretado"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="20sp"
         app:cornerRadius="60dp"
         app:icon="@drawable/bus"
         app:iconTint="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/button1"
-        app:layout_constraintStart_toStartOf="@id/button1"
-        app:layout_constraintTop_toBottomOf="@id/button1"
-        android:contentDescription="@string/fretado" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button3"
         style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-        android:layout_width="205sp"
-        android:layout_height="90sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/green"
+        android:contentDescription="@string/agenda"
         android:text="Agenda"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="20sp"
         app:cornerRadius="60dp"
         app:icon="@drawable/agenda"
         app:iconTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="@id/button2"
         app:layout_constraintStart_toStartOf="@id/button2"
-        app:layout_constraintTop_toBottomOf="@id/button2"
-        android:contentDescription="@string/agenda"/>
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
